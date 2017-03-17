@@ -1,0 +1,7 @@
+{
+	"host": "172.16.31.113",
+	"port": 18080,
+	"api": {
+		"yesterdayRank": "/api/sfa/datasource/queryResultForMobile"
+	}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <title></title>
+            
+            <style type="text/css">
+                .iframe-body {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    scroll: none;
+                }
+            </style>
+    </head>
+    
+    <body>
+<!--        view/salemanvisitdetail.html?enterprisenumber=1007631&usernumber=1220018&sessionid=5B9455A4-6DF4-4FB3-A2A7-D77BCBC87E39-->
+        <iframe class="iframe-body" src="" border="none"></iframe>
+        <script type="text/javascript" src="js/jquery.js" ></script>
+        <script type="text/javascript">
+            function setUrl() {
+                $(".iframe-body").attr("src", url);
+            }
+       $(document).ready(function(){
+            ios.call()
+       })
+
+        function callback(str)
+        {
+            $(".iframe-body").attr("src", str);
+        }
+        </script>
+    </body>
+</html>
